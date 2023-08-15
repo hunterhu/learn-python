@@ -7,3 +7,8 @@ print(big)
 
 big = [ item for item in items if item > 3 ]
 print(big)
+
+members = [("hunter", 40), ("Joe", 30), ("Amy", 25)]
+young = [ person[0] for person in members if person[1] < 30 ]
+print(young)
+
