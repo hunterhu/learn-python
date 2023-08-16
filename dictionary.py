@@ -6,16 +6,11 @@ paragraph = """
     if you like it, bad if you don't.
 """
 
-words = {"good":0, "bad":0}
-
-print(words["good"])
-print(words["bad"])
+words = {}
+print(words)
 
 for word in paragraph.split():
-    if word == "good":
-        words["good"] += 1
-    if word == "bad":
-        words["bad"] += 1
+    if word not in words:
+        words[word] = paragraph.count(word)
 
-print(words["good"])
-print(words["bad"])
+print(words)
